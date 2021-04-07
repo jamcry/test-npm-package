@@ -1,0 +1,23 @@
+{
+  "name": "test-npm-package",
+  "version": "1.0.0",
+  "description": "Test package for testing GH actions",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamcry/test-npm-package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamcry/test-npm-package/issues"
+  },
+  "homepage": "https://github.com/jamcry/test-npm-package#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
