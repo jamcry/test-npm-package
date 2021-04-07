@@ -1,7 +1,7 @@
 on:
   push:
     branches: # only trigger when a commit was pushed to master
-      - master
+      - main
 
 jobs:
   publish:
@@ -14,12 +14,12 @@ jobs:
       - run: npm install
       - run: npm test
       - run: npm run build # compiles with tsc
-      
+
       - id: publish
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-            
+
       - id: create-gh-release
         uses: actions/create-release@latest
         env:
@@ -27,4 +27,3 @@ jobs:
         with:
           tag_name: ${{ steps.publish.outputs.version }}
           release_name: ${{ steps.publish.outputs.version }}
-
