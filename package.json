@@ -1,5 +1,5 @@
 {
-  "name": "test-npm-package",
+  "name": "jamcry-test-npm-package",
   "version": "1.0.0",
   "description": "Test package for testing GH actions",
   "main": "src/index.js",
