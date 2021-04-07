@@ -1,8 +1,8 @@
 {
   "name": "jamcry-test-npm-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Test package for testing GH actions",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "build": "tsc"
