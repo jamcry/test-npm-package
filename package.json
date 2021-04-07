@@ -1,10 +1,10 @@
 {
   "name": "jamcry-test-npm-package",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test package for testing GH actions",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "build": "tsc"
   },
   "repository": {
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/jamcry/test-npm-package#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
     "typescript": "^4.2.3"
   }
 }
