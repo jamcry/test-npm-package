@@ -27,13 +27,3 @@ jobs:
         with:
           tag_name: ${{ steps.publish.outputs.version }}
           release_name: ${{ steps.publish.outputs.version }}
-
-          
-on: pull_request
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: npm install
-      - run: npm test
