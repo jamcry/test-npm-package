@@ -1,1 +1,4 @@
-export const sayMyName = (name?: string) => name || "jamcry";
+// returns your name
+const sayMyName = (name?: string) => name || "jamcry";
+
+export { sayMyName };
