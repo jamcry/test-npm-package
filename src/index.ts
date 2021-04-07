@@ -1,4 +1,6 @@
 // returns your name
-const sayMyName = (name?: string) => name || "jamcry";
+const getMyName = (name?: string) => name || "jamcry";
+// logs your name
+const sayMyName = (name?: string) => console.log(getMyName(name));
 
-export { sayMyName };
+export { getMyName, sayMyName };
