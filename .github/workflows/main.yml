@@ -1,6 +1,6 @@
 on:
   push:
-    branches: # only trigger when a commit was pushed to master
+    branches: # only trigger when a commit was pushed to main
       - main
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - run: npm test
       - run: npm run build # compiles with tsc
 
-      - id: publish
+      - id: publish-to-npm
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}

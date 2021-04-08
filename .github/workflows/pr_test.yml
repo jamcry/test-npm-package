@@ -8,6 +8,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10
-      - run: npm install
-      - run: npm test
-      - uses: kentaro-m/auto-assign-action@v1.1.2
+      - id: test-code
+        run: npm install
+        run: npm test
+
+      - id: auto-assign
+        uses: kentaro-m/auto-assign-action@v1.1.2
