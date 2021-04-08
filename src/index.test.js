@@ -1,9 +1,9 @@
-const { sayMyName } = require("./index");
+const { getMyName } = require("./index");
 
 test("should say jamcry as default", () => {
-  expect(sayMyName()).toBe("jamcry");
+  expect(getMyName()).toBe("jamcry");
 });
 
 test("should say given name", () => {
-  expect(sayMyName("myname")).toBe("myname");
+  expect(getMyName("myname")).toBe("myname");
 });
