@@ -12,5 +12,7 @@ jobs:
       - run: npm test
       - uses: kentaro-m/auto-assign-action@v1.1.2
       - uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           msg: "Automated message @jamcry!"
