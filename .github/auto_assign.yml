@@ -1,17 +1,18 @@
+# Set PR owner as Assignee
+addAssignees: author
+
 # Set to true to add reviewers to pull requests
 addReviewers: true
 
-# Set to true to add assignees to pull requests
-addAssignees: author
-
-
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
+  # this is the list of all teammates, it includes the PR owner but it doesn't matter because GH will skip it automatically
   - jamcry
-
-# A list of assignees, overrides reviewers if set
-assignees:
-  - jamcry
+  - yasincaliskan
+  - Anlerkan
+  - bilgeyucel
+  - mucahit
+  - edizcelik
 
 # A number of assignees to add to the pull request
 # Set to 0 to add all of the assignees.
@@ -21,3 +22,4 @@ numberOfAssignees: 0
 # A list of keywords to be skipped the process that add reviewers if pull requests include it
 skipKeywords:
   - wip
+  - draft
