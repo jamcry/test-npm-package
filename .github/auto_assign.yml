@@ -9,11 +9,10 @@ reviewers:
   # this is the list of all teammates, it includes the PR owner but it doesn't matter because GH will skip it automatically
   - jamcry
   - Anlerkan
-  #  - yasincaliskan
-
- #- bilgeyucel
- # - mucahit
- # - edizcelik
+  - yasincaliskan
+  # - bilgeyucel
+  # - mucahit
+  # - edizcelik
 
 # A number of assignees to add to the pull request
 # Set to 0 to add all of the assignees.
@@ -24,3 +23,7 @@ numberOfAssignees: 0
 skipKeywords:
   - wip
   - draft
+
+filterLabels:
+  include:
+    - Ready For Review
