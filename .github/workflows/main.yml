@@ -1,3 +1,5 @@
+name: "main Branch Actions"
+
 on:
   push:
     branches: # only trigger when a commit was pushed to main
