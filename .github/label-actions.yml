@@ -1,0 +1,10 @@
+# Configuration for Label Actions - https://github.com/dessant/label-actions
+
+# Actions taken when the `heated` label is added to issues or pull requests
+fix:
+  # Post a comment
+  comment: this should fix.
+
+Ready For Review:
+  # Post a comment
+  comment: This is ready for review @jamcry.
