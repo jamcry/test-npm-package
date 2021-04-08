@@ -7,10 +7,9 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10
-      - id: test-code
-        run: npm install
-        run: npm test
+            node-version: 10
+      - run: npm install
+      - run: npm test
 
       - id: auto-assign
         uses: kentaro-m/auto-assign-action@v1.1.2
