@@ -1,6 +1,6 @@
 {
   "name": "jamcry-test-npm-package",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Test package for testing GH actions",
   "main": "lib/index.js",
   "scripts": {
